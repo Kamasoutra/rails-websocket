@@ -1,18 +1,21 @@
 # rails-websocket
 
+Simple demo implementing WebSockets in Ruby on Rails made for my students
 
-## Known issues 
+Nothing really fancy, just a simple chat
 
-### eventmachine fail to install on macOS
+## Known issues
 
-Try the following 
+### eventmachine fails to install on macOS
+
+Try the following :
 
 ~~~
 brew install openssl
 bundle config build.eventmachine --with-cppflags=-I/usr/local/opt/openssl/include
 ~~~
 
-Then run
+Then run :
 
 ~~~
 bundle install
