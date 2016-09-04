@@ -30,4 +30,6 @@ $(function() {
 
   var username = randomUsername();
   var color = randomColor({luminosity: 'light'});
+
+  dispatcher.trigger("new_message", "<span class='welcome_buddy' style='color:" + color + ";'>" + username + " joined the channel !</span> ");
 });
