@@ -1,0 +1,22 @@
+body {
+  background-color: #7E349D;
+  color: white;
+  font: 18px BlinkMacSystemFont;
+}
+
+input {
+  background-color: #5E147D;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  line-height: 200%;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+}
