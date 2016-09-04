@@ -4,6 +4,8 @@ Simple demo implementing WebSockets in Ruby on Rails made for my students
 
 Nothing really fancy, just a simple chat
 
+[Demo available on Heroku](https://kamasoutra-rails-websocket.herokuapp.com/)
+
 ## Known issues
 
 ### eventmachine fails to install on macOS
