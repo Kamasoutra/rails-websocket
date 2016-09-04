@@ -4,7 +4,13 @@ body {
   font: 18px BlinkMacSystemFont;
 }
 
-input {
+#messages {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+#new_message {
   background-color: #5E147D;
   width: 100%;
   position: absolute;
@@ -15,8 +21,10 @@ input {
   font-size: 18px;
   border: none;
   outline: none;
+  padding: 0px 20px 0px 20px;
 }
 
 li {
   list-style-type: none;
+  margin: 10px 0 10px -20px;
 }

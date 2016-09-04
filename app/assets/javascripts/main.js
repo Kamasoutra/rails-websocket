@@ -3,12 +3,12 @@ $(function() {
   dispatcher = new WebSocketRails($("#echo").data("uri"), true);
 
   // We check each time a character is typed in the input field
-  $("#message").keypress(function(event) {
+  $("#new_message").keypress(function(event) {
     // If user hit "return" key and message is not empty => send message
-    if (event.which == 13 && $("#message").val() !== "") {
-      send($("#message").val());
-      $("#message").val("");
-      $("#message").focus();
+    if (event.which == 13 && $("#new_message").val() !== "") {
+      send($("#new_message").val());
+      $("#new_message").val("");
+      $("#new_message").focus();
     }
   });
 
@@ -23,6 +23,7 @@ $(function() {
     dispatcher.trigger("new_message", username + " : " + message);
   }
 
+  // Returns a random username
   function randUser() {
     return Math.random().toString(36).substr(2, 9);
   }
