@@ -15,12 +15,12 @@ $(function() {
   // We bind the incoming message event
   dispatcher.bind("new_message",
     function(message) {
-      $("#messages").append("<li>" + username + " : " + message + "</li>");
+      $("#messages").append("<li>" + message + "</li>");
     });
 
   // Here we send the message in the websocket
   function send(message) {
-    dispatcher.trigger("new_message", message);
+    dispatcher.trigger("new_message", username + " : " + message);
   }
 
   function randUser() {
