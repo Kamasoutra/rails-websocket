@@ -20,13 +20,14 @@ $(function() {
 
   // Here we send the message in the websocket
   function send(message) {
-    dispatcher.trigger("new_message", username + " : " + message);
+    dispatcher.trigger("new_message", "<span class='username' style='color:" + color + ";'>" + username + " :</span> " + message);
   }
 
   // Returns a random username
-  function randUser() {
+  function randomUsername() {
     return Math.random().toString(36).substr(2, 9);
   }
 
-  var username = randUser();
+  var username = randomUsername();
+  var color = randomColor({luminosity: 'light'});
 });

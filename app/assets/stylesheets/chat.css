@@ -1,7 +1,8 @@
 body {
   background-color: #7E349D;
   color: white;
-  font: 18px BlinkMacSystemFont;
+  font-family: 'Roboto', cursive;
+  font: 18px;
 }
 
 #messages {
@@ -11,6 +12,7 @@ body {
 }
 
 #new_message {
+  font-family: 'Roboto', cursive;
   background-color: #5E147D;
   width: 100%;
   position: absolute;
@@ -21,7 +23,7 @@ body {
   font-size: 18px;
   border: none;
   outline: none;
-  padding: 0px 20px 0px 20px;
+  padding: 0 20px 0 20px;
 }
 
 li {
