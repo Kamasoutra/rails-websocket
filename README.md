@@ -1,4 +1,4 @@
-# rails-websocket
+# rails-websocket [![CircleCI](https://circleci.com/gh/Kamasoutra/rails-websocket/tree/master.svg?style=svg)](https://circleci.com/gh/Kamasoutra/rails-websocket/tree/master)
 
 Simple demo implementing WebSockets in Ruby on Rails made for my students
 
